@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "birthdate": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "pronoun": {
+      "type": "string"
+    },
+    "address": {
+      "type": "object",
+      "properties": {
+        "address": {
+          "type": "string"
+        },
+        "addressNumber": {
+          "type": "string"
+        },
+        "addressDetails": {
+          "type": "string"
+        },
+        "zipCode": {
+          "type": "string"
+        },
+        "district": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "address",
+        "addressNumber",
+        "addressDetails",
+        "zipCode",
+        "district",
+        "city",
+        "state",
+        "country"
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "birthdate",
+    "phoneNumber",
+    "pronoun",
+    "address"
+  ]
+}

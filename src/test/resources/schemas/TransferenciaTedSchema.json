@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "transactionDate": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "transferMethod": {
+      "type": "string"
+    },
+    "transactionDescription": {
+      "type": "string"
+    },
+    "destination": {
+      "type": "object",
+      "properties": {
+        "document": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "branchId": {
+          "type": "string"
+        },
+        "accNumber": {
+          "type": "string"
+        },
+        "accType": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "document",
+        "name",
+        "branchId",
+        "accNumber",
+        "accType"
+      ]
+    },
+    "origin": {
+      "type": "object",
+      "properties": {
+        "document": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "branchId": {
+          "type": "string"
+        },
+        "accNumber": {
+          "type": "string"
+        },
+        "accType": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "document",
+        "name",
+        "branchId",
+        "accNumber",
+        "accType"
+      ]
+    }
+  },
+  "required": [
+    "transactionDate",
+    "amount",
+    "transferMethod",
+    "transactionDescription",
+    "destination",
+    "origin"
+  ]
+}

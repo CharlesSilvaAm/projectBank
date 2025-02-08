@@ -1,0 +1,239 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "document": {
+      "type": "string"
+    },
+    "birthdate": {
+      "type": "string"
+    },
+    "pronoun": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "selfDeclaredRace": {
+      "type": "string"
+    },
+    "isPcd": {
+      "type": "boolean"
+    },
+    "pcdDescription": {
+      "type": "string"
+    },
+    "educationalLevel": {
+      "type": "string"
+    },
+    "occupation": {
+      "type": "string"
+    },
+    "monthlyIncome": {
+      "type": "string"
+    },
+    "jobExperience": {
+      "type": "string"
+    },
+    "workType": {
+      "type": "string"
+    },
+    "address": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "address": {
+              "type": "string"
+            },
+            "addressNumber": {
+              "type": "string"
+            },
+            "addressDetails": {
+              "type": "string"
+            },
+            "zipCode": {
+              "type": "string"
+            },
+            "district": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "address",
+            "addressNumber",
+            "addressDetails",
+            "zipCode",
+            "district",
+            "city",
+            "state",
+            "country"
+          ]
+        }
+      ]
+    },
+    "bankAccount": {
+      "type": "object",
+      "properties": {
+        "accNumber": {
+          "type": "string"
+        },
+        "branchId": {
+          "type": "string"
+        },
+        "bankId": {
+          "type": "string"
+        },
+        "balance": {
+          "type": "integer"
+        },
+        "savingsBalance": {
+          "type": "integer"
+        },
+        "score": {
+          "type": "integer"
+        },
+        "accType": {
+          "type": "string"
+        },
+        "creditLimitMax": {
+          "type": "integer"
+        },
+        "creditLimitCurrent": {
+          "type": "integer"
+        },
+        "creditLimitUsed": {
+          "type": "integer"
+        },
+        "card": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "cardholderName": {
+                  "type": "string"
+                },
+                "cardNumber": {
+                  "type": "string"
+                },
+                "flag": {
+                  "type": "string"
+                },
+                "expirationDate": {
+                  "type": "string"
+                },
+                "securityCode": {
+                  "type": "string"
+                },
+                "cardType": {
+                  "type": "string"
+                },
+                "isInternational": {
+                  "type": "boolean"
+                },
+                "isBlocked": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "cardholderName",
+                "cardNumber",
+                "flag",
+                "expirationDate",
+                "securityCode",
+                "cardType",
+                "isInternational",
+                "isBlocked"
+              ]
+            }
+          ]
+        },
+        "pixKeys": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "key": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "key",
+                "type"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "accNumber",
+        "branchId",
+        "bankId",
+        "balance",
+        "savingsBalance",
+        "score",
+        "accType",
+        "creditLimitMax",
+        "creditLimitCurrent",
+        "creditLimitUsed",
+        "card",
+        "pixKeys"
+      ]
+    },
+    "user": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "username"
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "document",
+    "birthdate",
+    "pronoun",
+    "email",
+    "phoneNumber",
+    "gender",
+    "selfDeclaredRace",
+    "isPcd",
+    "pcdDescription",
+    "educationalLevel",
+    "occupation",
+    "monthlyIncome",
+    "jobExperience",
+    "workType",
+    "address",
+    "bankAccount",
+    "user"
+  ]
+}

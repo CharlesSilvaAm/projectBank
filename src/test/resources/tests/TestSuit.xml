@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AllTest Suite">
+    <suite-files>
+        <suite-file path="HealthTest.xml"/>
+        <suite-file path="AutenticacaoTest.xml"/>
+        <suite-file path="ChavePixTest.xml"/>
+        <suite-file path="LimiteTransacao.xml"/>
+        <suite-file path="TranferenciaTest.xml"/>
+        <suite-file path="UsuarioTest.xml"/>
+    </suite-files>
+</suite>

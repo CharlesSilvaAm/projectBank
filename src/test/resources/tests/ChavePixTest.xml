@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="APITests DBC BANK - ChavePix">
+    <test name="ChavePixTests">
+        <classes>
+            <class name="com.vemser.hackaton.dbcbank.rest.tests.chavepix.PostChavePixTest"/>
+            <class name="com.vemser.hackaton.dbcbank.rest.tests.chavepix.GetChavePixTest"/>
+            <class name="com.vemser.hackaton.dbcbank.rest.tests.chavepix.DeleteChavePixTest"/>
+        </classes>
+    </test>
+</suite>

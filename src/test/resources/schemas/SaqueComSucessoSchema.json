@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "accNumber": {
+      "type": "string"
+    },
+    "withdrawalAmount": {
+      "type": "integer"
+    },
+    "updatedBalance": {
+      "type": "integer"
+    },
+    "transactionDate": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "accNumber",
+    "withdrawalAmount",
+    "updatedBalance",
+    "transactionDate"
+  ]
+}

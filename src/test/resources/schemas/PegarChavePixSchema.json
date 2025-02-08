@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "pixKeys": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "key",
+            "type"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "pixKeys"
+  ]
+}
